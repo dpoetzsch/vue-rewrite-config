@@ -8,6 +8,11 @@ const copy = require("recursive-copy");
 const fs = require("fs");
 const rimraf = require("rimraf");
 
+if (process.argv.length < 3) {
+  console.error("Usage: vue-rewrite-config <vue dist dir> <dest dir>");
+  process.exit(1);
+}
+
 const DIST_DIR = process.argv[1];
 const DEST_DIR = process.argv[2];
 
