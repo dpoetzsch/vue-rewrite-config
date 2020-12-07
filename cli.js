@@ -34,10 +34,10 @@ function rewriteIndexHTML(file, values) {
   fs.readFile(file, "utf8", function(error, data) {
     if (!error) {
       const $ = cheerio.load(data);
-      console.info(`Rewriting values '${values}'`);
+      console.info(`Rewriting ${Object.entries(values).length} values:`);
       for (const [key, value] of Object.entries(values)) {
-        console.log(key, value);
-        $(`[property=${key}]`).attr("content", value);
+        console.log(`${key} = ${value}`);
+        $(`[name=${key}]`).attr("content", value);
       }
 
       fs.writeFile(file, $.html(), function(error) {
