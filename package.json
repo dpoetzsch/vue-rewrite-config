@@ -1,0 +1,24 @@
+{
+  "name": "vue-rewrite-config",
+  "version": "1.0.0",
+  "description": "Rewrite a VueJS index.html for a configurable dockerized deployment",
+  "main": "rewrite-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mondata-dev/vue-rewrite-config.git"
+  },
+  "author": "Mondata GmbH <dev@mondata.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mondata-dev/vue-rewrite-config/issues"
+  },
+  "homepage": "https://github.com/mondata-dev/vue-rewrite-config#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "recursive-copy": "^2.0.11",
+    "rimraf": "^3.0.2"
+  }
+}
