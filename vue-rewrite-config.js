@@ -8,8 +8,8 @@ const copy = require("recursive-copy");
 const fs = require("fs");
 const rimraf = require("rimraf");
 
-const DIST_DIR = process.env.DIST_DIR;
-const DEST_DIR = process.env.DEST_DIR;
+const DIST_DIR = process.argv[1];
+const DEST_DIR = process.argv[2];
 
 // all environment variables that start with VUE_APP_
 const ENV = Object.keys(process.env)
