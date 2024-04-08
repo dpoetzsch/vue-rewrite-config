@@ -1,6 +1,6 @@
 {
   "name": "vue-rewrite-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rewrite a VueJS index.html for a configurable dockerized deployment",
   "main": "rewrite-config.js",
   "scripts": {

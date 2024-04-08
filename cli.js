@@ -16,9 +16,11 @@ if (process.argv.length < 4) {
 const DIST_DIR = process.argv[2];
 const DEST_DIR = process.argv[3];
 
+const envVarPrefix = process.env.REWRITE_CONFIG_VAR_PREFIX || "VUE_APP_";
+
 // all environment variables that start with VUE_APP_
 const ENV = Object.keys(process.env)
-  .filter(k => k.startsWith("VUE_APP_"))
+  .filter(k => k.startsWith(envVarPrefix))
   .reduce((obj, key) => {
     obj[key] = process.env[key];
     return obj;
