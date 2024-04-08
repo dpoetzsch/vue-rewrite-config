@@ -1,6 +1,6 @@
 {
   "name": "vue-rewrite-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Rewrite a VueJS index.html for a configurable dockerized deployment",
   "main": "rewrite-config.js",
   "scripts": {
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/mondata-dev/vue-rewrite-config#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.12",
     "recursive-copy": "^2.0.11",
-    "rimraf": "^3.0.2"
+    "rimraf": "^5.0.5"
   }
 }
